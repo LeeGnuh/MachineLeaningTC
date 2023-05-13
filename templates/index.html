@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--
+	Technology by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>10 Topics Text Categorization</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+	<!-- COLORS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/blue.css') }}" title="blue"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+    <link rel="alternate stylesheet" href="{{ url_for('static', filename='css/green.css') }}" title="green">
+	<link rel="alternate stylesheet" href="{{ url_for('static', filename='css/orange.css') }}" title="orange">
+	<link rel="alternate stylesheet" href="{{ url_for('static', filename='css/purple.css') }}" title="purple">
+	<link rel="alternate stylesheet" href="{{ url_for('static', filename='css/slate.css') }}" title="slate">
+	<link rel="alternate stylesheet" href="{{ url_for('static', filename='css/yellow.css') }}" title="yellow">
+	<link rel="alternate stylesheet" href="{{ url_for('static', filename='css/red.css') }}" title="red">
+	<link rel="alternate stylesheet" href="{{ url_for('static', filename='css/blue-munsell.css') }}" title="blue-munsell">
+
+	<!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/demo.css') }}">
+
+
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.js"></script>
+    <![endif]-->
+	
+</head>
+<body>
+
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div><!-- /#st-preloader -->
+
+	<section id="home-page">
+		<div class="container-fluid home-bg">
+			<div class="row">
+				<div class="col-md-12 text-center home-page">
+					<div class="main-logo">
+						<a href=""><img src="{{ url_for('static', filename='images/QNU.png') }}" alt="" style="width:100px;height:100px;" /></a>
+						<a href=""><img src="{{ url_for('static', filename='images/IT-QNU.png') }}" alt="" style="width:100px;height:100px;" /></a>
+					</div>
+					<h1>QUY NHON UNIVERSITY</h1>
+					<h1>FACULTY OF INFOMATION TECHNOLOGY</h1>
+					</br></br>
+					<h2>WEBPAGE: CLASSIFICATION OF ARTICLES BY CATEGORY</h2>					
+				</div>
+			</div>
+			</br></br></br></br></br></br></br></br>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="about-title" style="color:gray">About Us</h1>
+					<div class="service-aro-icon">
+						<div class="service-aro-left"></div>
+							<i class="fa fa-group"></i>
+						<div class="service-aro-right"></div>
+					</div>
+					<h2 style="color:gray">Scroll down to see more...</h2>
+					</br></br></br></br>					
+				</div>
+				<div class="col-md-7 text-center member">
+					<div class="member-img">
+						<img src="{{ url_for('static', filename='images/ThayHung.png') }}" style="width:200px;height:200px;" alt="" />
+					</div>
+					<h3>Dr. Le Quang Hung</h3>
+                    <span>Instructors</span>
+				</div>
+				<div class="col-md-3 text-center member">
+					<div class="member-img">
+						<img src="{{ url_for('static', filename='images/MinhHung.png') }}" style="width:200px;height:200px;" alt="" />						
+					</div>
+					<h3>Student Le Thien Minh Hung</h3>
+					<span>StudentID: 4251190002</span></br>
+					<span>Essay writer</span>
+				</div>
+			</div><!-- /.row -->
+			</br></br></br>
+		</div>
+	</section><!-- /#home-page -->
+	
+	<section id="contact-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<form id="main-contact-form" class="contact-form-area text-center" name="contact-form" method="post" action="http://localhost:5000/demo">
+						<h1 class="contact-title">DEMO WEB APP</h1>
+						<div class="service-aro-icon">
+							<div class="service-aro-left"></div>
+								<i class="fa fa-envelope"></i>
+							<div class="service-aro-right"></div>
+						</div>
+                        
+						<h2>Feel free to enter any article</h2>
+						<p>You can copy articles from news sites you often read</p>
+						<div class="contact-form">
+							<div class="col-sm-10 your-message col-sm-offset-1">
+								<div class="form-group">
+									<textarea name="message" id="message" required="required" class="form-control" rows="10" placeholder="Enter an article..."></textarea>
+								</div>
+								<h3>Genre: {{result}}</h3></br>
+								<div class="form-group">
+									<button type="submit" name="submit" class="btn btn-primary btn-lg submit-button" >Check Genre</button>
+								</div>
+							</div>
+                            </div>     
+						</div>
+                       
+					</form>
+				</br></br></br></br>
+				</div>
+			</div><!--/.row-->
+		</div><!-- /.container -->
+	</section><!-- /#contact-page -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<p>ID: 4251190002     <strong></strong>-/- Student: Le Thien Minh Hung -/- Contact: <strong><a href="https://www.facebook.com/LTMH0101" target="_blank">Facebook</a></strong></p>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /.footer -->
+	
+	<!-- JS -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script><!-- jQuery -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script><!-- Bootstrap -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/countdown.js') }}"></script><!-- Countdown -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.ajaxchimp.js') }}"></script><!-- ajaxchimp -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script><!-- Scripts -->
+
+	<!-- =========================================================
+	     STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
+	============================================================== -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/styleswitcher.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/demo.js') }}"></script>
+	<div class="demo-style-switch" id="switch-style">
+		<a id="toggle-switcher" class="switch-button"><i class="fa fa-cog fa-spin fa-fw"></i></a>
+		<div class="switched-options">				
+			<div class="config-title">
+				Colors :
+			</div>
+			<ul class="styles">
+				<li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="Blue">
+				<div class="blue">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('purple'); return false;" title="Purple">
+				<div class="purple">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('blue-munsell'); return false;" title="Blue Munsell">
+				<div class="blue-munsell">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" title="Orange">
+				<div class="orange">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('slate'); return false;" title="Slate">
+				<div class="slate">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('green'); return false;" title="Green">
+				<div class="green">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" title="Yellow">
+				<div class="yellow">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="Red">
+				<div class="red">
+				</div>
+				</a></li>
+				
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
